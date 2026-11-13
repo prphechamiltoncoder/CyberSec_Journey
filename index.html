@@ -2,178 +2,167 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cybersec Journey | Cybersecurity Portfolio</title>
+    <title>Cybersec Journey | Cybersecurity Portfolio</title>
 
-    <!-- Connects the purple and neon green styling -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <span>🛡️</span> CYBERSEC_JOURNEY
-        </div>
+    <header>
+        <div class="logo">
+            <span>🛡️</span> CYBERSEC_JOURNEY
+        </div>
 
-        <div class="status">
-            <span class="status-dot"></span>
-            LEARNING IN PROGRESS
-        </div>
-    </header>
+        <div class="status">
+            <span class="status-dot"></span>
+            LEARNING IN PROGRESS
+        </div>
+    </header>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#progress">My Progress</a>
-        <a href="#rooms">TryHackMe Rooms</a>
-        <a href="#labs">Labs & Projects</a>
-        <a href="#skills">Skills</a>
-    </nav>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#progress">My Progress</a>
+        <a href="#rooms">TryHackMe Rooms</a>
+        <a href="#labs">Labs & Projects</a>
+        <a href="#skills">Skills</a>
+    </nav>
 
-    <main id="home">
+    <main id="home">
 
-        <!-- Welcome Section -->
-        <section class="welcome">
-            <p class="eyebrow">MY CYBERSECURITY JOURNEY</p>
+        <section class="welcome">
+            <p class="eyebrow">MY CYBERSECURITY JOURNEY</p>
 
-            <h1>
-                Behind the <span>Firewall.</span>
-            </h1>
+            <h1>
+                Behind the <span>Firewall.</span>
+            </h1>
 
-            <p>
-                Building my future in cybersecurity, one lab,
-                one challenge, and one skill at a time.
-                This portfolio documents my hands-on learning,
-                technical growth, and journey into cybersecurity.
-            </p>
-        </section>
+            <p>
+                Building my future in cybersecurity, one lab,
+                one challenge, and one skill at a time.
+                This portfolio documents my hands-on learning,
+                technical growth, and journey into cybersecurity.
+            </p>
+        </section>
 
-        <!-- Dashboard Statistics -->
-        <section class="stats">
+        <section class="stats">
 
-            <div class="stat-card">
-                <p>TRYHACKME ROOMS</p>
-                <h2 id="rooms">0</h2>
-                <small>Rooms completed</small>
-            </div>
+            <div class="stat-card">
+                <p>TRYHACKME ROOMS</p>
+                <h2 id="roomCount">0</h2>
+                <small>Rooms completed</small>
+            </div>
 
-            <div class="stat-card">
-                <p>LABS & PROJECTS</p>
-                <h2 id="labCount">0</h2>
-                <small>Hands-on experience</small>
-            </div>
+            <div class="stat-card">
+                <p>LABS & PROJECTS</p>
+                <h2 id="labCount">0</h2>
+                <small>Hands-on experience</small>
+            </div>
 
-            <div class="stat-card">
-                <p>SKILLS</p>
-                <h2 id="skillCount">0</h2>
-                <small>Skills developed</small>
-            </div>
+            <div class="stat-card">
+                <p>SKILLS</p>
+                <h2 id="skillCount">0</h2>
+                <small>Skills developed</small>
+            </div>
 
-            <div class="stat-card">
-                <p>CERTIFICATIONS</p>
-                <h2 id="certCount">0</h2>
-                <small>Certifications earned</small>
-            </div>
+            <div class="stat-card">
+                <p>CERTIFICATIONS</p>
+                <h2 id="certCount">0</h2>
+                <small>Certifications earned</small>
+            </div>
 
-        </section>
+        </section>
 
-        <!-- Learning Progress -->
-        <section class="panel" id="progress">
-            <h2>My Learning Progress</h2>
+        <section class="panel" id="progress">
+            <h2>My Learning Progress</h2>
 
-            <p>
-                Tracking my progress toward completing
-                20 cybersecurity learning rooms.
-            </p>
+            <p>
+                Tracking my progress toward completing
+                20 cybersecurity learning rooms.
+            </p>
 
-            <div class="progress-track">
-                <div class="progress-fill" id="progress"></div>
-            </div>
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
 
-            <p id="progressText">
-                0% of my learning goal completed
-            </p>
-        </section>
+            <p id="progressText">
+                0% of my learning goal completed
+            </p>
+        </section>
 
-        <!-- TryHackMe Section -->
-        <section class="panel" id="rooms">
-            <h2>TryHackMe Journey</h2>
+        <section class="panel" id="rooms">
+            <h2>TryHackMe Journey</h2>
 
-            <p>
-                A record of cybersecurity rooms,
-                challenges, and hands-on exercises completed.
-            </p>
+            <p>
+                A record of cybersecurity rooms,
+                challenges, and hands-on exercises completed.
+            </p>
 
-            <div id="roomList">
-                <p>No completed rooms added yet.</p>
-            </div>
+            <div id="roomList">
+                <p>No completed rooms added yet.</p>
+            </div>
 
-            <p>
-                <a href="https://tryhackme.com/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Visit TryHackMe
-                </a>
-            </p>
-        </section>
+            <p>
+                <a href="https://tryhackme.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Visit TryHackMe
+                </a>
+            </p>
+        </section>
 
-        <!-- Labs and Projects -->
-        <section class="panel" id="labs">
-            <h2>Labs & Projects</h2>
+        <section class="panel" id="labs">
+            <h2>Labs & Projects</h2>
 
-            <p>
-                My practical experience with cybersecurity tools,
-                systems, networking, and security concepts.
-            </p>
+            <p>
+                My practical experience with cybersecurity tools,
+                systems, networking, and security concepts.
+            </p>
 
-            <div id="labList">
-                <p>No labs or projects added yet.</p>
-            </div>
-        </section>
+            <div id="labList">
+                <p>No labs or projects added yet.</p>
+            </div>
+        </section>
 
-        <!-- Skills -->
-        <section class="panel" id="skills">
-            <h2>Technical Skills</h2>
+        <section class="panel" id="skills">
+            <h2>Technical Skills</h2>
 
-            <p>
-                Skills I am developing throughout my cybersecurity education.
-            </p>
+            <p>
+                Skills I am developing throughout my cybersecurity education.
+            </p>
 
-            <div class="activity-item">
-                <h3>Networking</h3>
-                <p>Learning network fundamentals and security.</p>
-            </div>
+            <div class="activity-item">
+                <h3>Networking</h3>
+                <p>Learning network fundamentals and security.</p>
+            </div>
 
-            <div class="activity-item">
-                <h3>Linux</h3>
-                <p>Building command-line and operating system skills.</p>
-            </div>
+            <div class="activity-item">
+                <h3>Linux</h3>
+                <p>Building command-line and operating system skills.</p>
+            </div>
 
-            <div class="activity-item">
-                <h3>Cybersecurity Fundamentals</h3>
-                <p>Exploring security principles, threats, and defenses.</p>
-            </div>
+            <div class="activity-item">
+                <h3>Cybersecurity Fundamentals</h3>
+                <p>Exploring security principles, threats, and defenses.</p>
+            </div>
 
-            <div class="activity-item">
-                <h3>Python & Scripting</h3>
-                <p>Developing programming and automation skills.</p>
-            </div>
-        </section>
+            <div class="activity-item">
+                <h3>Python & Scripting</h3>
+                <p>Developing programming and automation skills.</p>
+            </div>
+        </section>
 
-    </main>
+    </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>CYBERSEC_JOURNEY | Learning. Building. Protecting.</p>
-        <p>My cybersecurity journey is just getting started.</p>
-    </footer>
+    <footer>
+        <p>CYBERSEC_JOURNEY | Learning. Building. Protecting.</p>
+        <p>My cybersecurity journey is just getting started.</p>
+    </footer>
 
-    <!-- Connects the JavaScript dashboard functionality -->
-    <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
