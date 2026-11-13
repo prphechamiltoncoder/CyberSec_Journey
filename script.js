@@ -1,4 +1,3 @@
-
 /* =================================
    CYBERSEC_JOURNEY
    Dashboard Functionality
@@ -120,6 +119,23 @@ function updateDashboard() {
         });
     }
 }
+
+// 7. MY COMPLETED ROOMS
+// Add a new line here each time you finish a room:
+// addRoom("Room name", "Category", "Month Year");
+
+addRoom("Offensive Security Intro", "Intro to Cyber Security", "Oct 2026");
+addRoom("Defensive Security Intro", "Intro to Cyber Security", "Oct 2026");
+addRoom("Careers in Cyber", "Intro to Cyber Security", "Oct 2026");
+addRoom("Cold Boot", "Computer Fundamentals", "Nov 2026");
+
+// 8. MY SKILLS
+
+addSkill("Cybersecurity Fundamentals");
+
+// 9. INITIALIZE DASHBOARD
+
+updateDashboard();
 
 // 7. INITIALIZE DASHBOARD
 
