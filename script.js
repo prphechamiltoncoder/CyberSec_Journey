@@ -56,7 +56,7 @@ function addCertification(certification) {
 
 function updateDashboard() {
 
-    document.getElementById("rooms").textContent =
+    document.getElementById("roomCount").textContent =
         portfolio.rooms.length;
 
     document.getElementById("labCount").textContent =
@@ -77,7 +77,7 @@ function updateDashboard() {
             100
         );
 
-    document.getElementById("progress").style.width =
+    document.getElementById("progressFill").style.width =
         progress + "%";
 
     document.getElementById("progressText").textContent =
@@ -88,46 +88,39 @@ function updateDashboard() {
 
     const roomList = document.getElementById("roomList");
 
-    roomList.innerHTML = "";
+    if (portfolio.rooms.length > 0) {
+        roomList.innerHTML = "";
 
-    portfolio.rooms.forEach(room => {
-
-        const item = document.createElement("div");
-
-        item.className = "activity-item";
-
-        item.innerHTML = `
-            <h3>${room.name}</h3>
-            <p>${room.category} | Completed: ${room.date}</p>
-        `;
-
-        roomList.appendChild(item);
-
-    });
+        portfolio.rooms.forEach(room => {
+            const item = document.createElement("div");
+            item.className = "activity-item";
+            item.innerHTML = `
+                <h3>${room.name}</h3>
+                <p>${room.category} | Completed: ${room.date}</p>
+            `;
+            roomList.appendChild(item);
+        });
+    }
 
     // Display labs
 
     const labList = document.getElementById("labList");
 
-    labList.innerHTML = "";
+    if (portfolio.labs.length > 0) {
+        labList.innerHTML = "";
 
-    portfolio.labs.forEach(lab => {
-
-        const item = document.createElement("div");
-
-        item.className = "activity-item";
-
-        item.innerHTML = `
-            <h3>${lab.name}</h3>
-            <p>${lab.description}</p>
-        `;
-
-        labList.appendChild(item);
-
-    });
+        portfolio.labs.forEach(lab => {
+            const item = document.createElement("div");
+            item.className = "activity-item";
+            item.innerHTML = `
+                <h3>${lab.name}</h3>
+                <p>${lab.description}</p>
+            `;
+            labList.appendChild(item);
+        });
+    }
 }
 
 // 7. INITIALIZE DASHBOARD
 
 updateDashboard();
-
